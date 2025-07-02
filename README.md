@@ -25,11 +25,11 @@ This project demonstrates the deployment of a 2-tier architecture on AWS using E
 ---
 
 ## 📁 Directory Structure
-
-project-directory/
-├── form.html
-├── submit.php
-└── README.md
+         
+project-directory/  
+├── form.html   
+├── submit.php   
+└── README.md   
 
 
 ---
@@ -63,34 +63,31 @@ project-directory/
 
 ## 🧩 Connectivity Flow
 
-[User Browser]
-↓ (HTTP)
-[Web EC2 (NGINX)]
-↓ (POST)
-[App EC2 (PHP + DB)]
-↓
-[Database (MySQL/MariaDB)]
+[User Browser]      
+↓ (HTTP)                  
+[Web EC2 (NGINX)]                  
+↓ (POST)                          
+[App EC2 (PHP + DB)]                   
+↓                                   
+[Database (MySQL/MariaDB)]                    
 
+---
+                 
 🚀 Deployment Steps
+
 Launch 2 EC2 Instances: Web & App
-
 Configure SGs for isolated communication
-
 Install necessary packages:
-
 Web: nginx
-
 App: php, mysql-server or mariadb-server
-
 Copy form.html to /var/www/html on Web instance
-
 Copy submit.php to /var/www/html on App instance
-
 Start services and test from browser
 
+---
+
 ✅ Outcome
+
 Data submitted through form.html is stored in the App server’s database.
-
 Clear segregation between frontend and backend layers.
-
 Secure and scalable foundation for multi-tier applications.
