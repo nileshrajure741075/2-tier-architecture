@@ -75,19 +75,19 @@ project-directory/
                  
 🚀 Deployment Steps
 
-Launch 2 EC2 Instances: Web & App
-Configure SGs for isolated communication
-Install necessary packages:
-Web: nginx
-App: php, mysql-server or mariadb-server
-Copy form.html to /var/www/html on Web instance
-Copy submit.php to /var/www/html on App instance
-Start services and test from browser
+- Launch 2 EC2 Instances: Web & App
+- Configure SGs for isolated communication
+- Install necessary packages:
+- Web: nginx
+- App: php, mysql-server or mariadb-server
+- Copy form.html to /var/www/html on Web instance
+- Copy submit.php to /var/www/html on App instance
+- Start services and test from browser
 
 ---
 
 ✅ Outcome
 
-Data submitted through form.html is stored in the App server’s database.
-Clear segregation between frontend and backend layers.
-Secure and scalable foundation for multi-tier applications.
+- Data submitted through form.html is stored in the App server’s database.
+- Clear segregation between frontend and backend layers.
+- Secure and scalable foundation for multi-tier applications.
