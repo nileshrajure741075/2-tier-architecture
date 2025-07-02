@@ -1,0 +1,13 @@
+create database facebook;
+
+use facebook;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  website VARCHAR(100),
+  comment TEXT
+);
+
+
