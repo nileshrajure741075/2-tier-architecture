@@ -48,12 +48,14 @@ project-directory/
 
 ### Web SG
 - Inbound:
+  - Port 22 (SSH) - from Anywhere  
   - Port 80 (HTTP) - from Anywhere
 - Outbound:
   - Allow HTTP (Port 80) to App SG
-
+  - Allow All Traffic (all) Anywhere
 ### App SG
 - Inbound:
+  - Port 22 (SSH) - from Web SG
   - Port 80 - from Web SG
   - Port 3306 (MySQL) - from itself or admin IP
 - Outbound:
